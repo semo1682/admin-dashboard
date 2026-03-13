@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | Eslam Mesalam</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <h2>ESLAM<span>.</span></h2>
+        <button class="close-btn" id="closeSidebar">×</button>
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="#" class="active">Dashboard</a>
+        <a href="#">Analytics</a>
+        <a href="#">Orders</a>
+        <a href="#">Customers</a>
+        <a href="#">Products</a>
+        <a href="#">Messages</a>
+        <a href="#">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="menu-btn" id="openSidebar">☰</button>
+          <h1>Dashboard Overview</h1>
+        </div>
+
+        <div class="topbar-right">
+          <input type="text" placeholder="Search..." />
+          <div class="profile-box">
+            <div class="avatar">EM</div>
+            <div>
+              <h4>Eslam Mesalam</h4>
+              <p>Front-End Developer</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="stats-grid">
+        <div class="stat-card">
+          <h3>Total Revenue</h3>
+          <p>$24,580</p>
+          <span>+12.5% this month</span>
+        </div>
+
+        <div class="stat-card">
+          <h3>Orders</h3>
+          <p>1,248</p>
+          <span>+8.2% this week</span>
+        </div>
+
+        <div class="stat-card">
+          <h3>Customers</h3>
+          <p>892</p>
+          <span>+5.1% this month</span>
+        </div>
+
+        <div class="stat-card">
+          <h3>Conversion Rate</h3>
+          <p>4.8%</p>
+          <span>+1.4% improvement</span>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <div class="panel large-panel">
+          <div class="panel-head">
+            <h2>Sales Analytics</h2>
+            <button>View Report</button>
+          </div>
+
+          <div class="fake-chart">
+            <div class="bar" style="height: 55%"></div>
+            <div class="bar" style="height: 72%"></div>
+            <div class="bar" style="height: 48%"></div>
+            <div class="bar" style="height: 90%"></div>
+            <div class="bar" style="height: 64%"></div>
+            <div class="bar" style="height: 78%"></div>
+            <div class="bar" style="height: 58%"></div>
+          </div>
+        </div>
+
+        <div class="panel small-panel">
+          <div class="panel-head">
+            <h2>Performance</h2>
+          </div>
+
+          <div class="progress-list">
+            <div class="progress-item">
+              <div class="progress-title">
+                <span>Sales Target</span>
+                <span>82%</span>
+              </div>
+              <div class="progress-bar"><div style="width:82%"></div></div>
+            </div>
+
+            <div class="progress-item">
+              <div class="progress-title">
+                <span>Customer Growth</span>
+                <span>68%</span>
+              </div>
+              <div class="progress-bar"><div style="width:68%"></div></div>
+            </div>
+
+            <div class="progress-item">
+              <div class="progress-title">
+                <span>Orders Goal</span>
+                <span>91%</span>
+              </div>
+              <div class="progress-bar"><div style="width:91%"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="table-panel panel">
+        <div class="panel-head">
+          <h2>Recent Orders</h2>
+          <button>Export</button>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Status</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1024</td>
+                <td>Ahmed Ali</td>
+                <td><span class="status completed">Completed</span></td>
+                <td>$220</td>
+              </tr>
+              <tr>
+                <td>#1025</td>
+                <td>Sara Mohamed</td>
+                <td><span class="status pending">Pending</span></td>
+                <td>$140</td>
+              </tr>
+              <tr>
+                <td>#1026</td>
+                <td>Omar Khaled</td>
+                <td><span class="status completed">Completed</span></td>
+                <td>$310</td>
+              </tr>
+              <tr>
+                <td>#1027</td>
+                <td>Mona Samir</td>
+                <td><span class="status cancelled">Cancelled</span></td>
+                <td>$95</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
